@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jslib.js"></script>
+    <!-- display: none; -->
+    <!-- <style>
+        #c,
+        #d {
+            background-color: chartreuse;
+            padding: 5px;
+        }
+
+        #d {
+
+            padding: 50px;
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <!-- <input type="text" id="name" placeholder="Enter name"> <br>
+    <input type="text" id="email" placeholder="Enter emial"> <br>
+    <input id="add" type="submit" value="Save">
+    <br>
+    <br>
+    <table border="2px" width="50%">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </table> -->
+
+    <!-- <script>
+
+        $(document).ready(function () {
+
+            $("#add").click(function () {
+                var n = $("#name").val()
+                var e = $("#email").val()
+
+
+                $("table").append("<tr><td>"+n+"</td><td>"+e +"</td></tr>")
+                $("#name").val('  ')
+                $("#email").val('')
+            })
+
+        });
+
+    </script> -->
+
+    <!-- <button id="r">remove</button>
+    <button id="e">empty</button>
+
+    <div style="background-color: aquamarine;height: 200px;">
+        <p>hhhhhhhhhhhhhhhh</p>
+        <h1>mmmmmmmmmmmmmm</h1>
+        
+    </div>
+    <p>jjjjjjjjjjjjjjjjjjj</p>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#r").click(function () {
+                $("div").remove()
+
+
+            })
+            $("#e").click(function () {
+                $("div").empty()
+
+
+            })
+
+        });
+
+    </script>  -->
+    <!-- 
+    <h1>hiiiiiiiiiiiiiiiiiiiiiiiii</h1>
+
+    <script>
+
+        $(document).ready(function () {
+            $("h1").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function () {
+                    $(this).css("background-color", "yellow");
+                },
+                dblclick: function () {
+                    $(this).css("background-color", "green");
+                }
+            });
+        })
+    </script> -->
+
+    <!-- 
+<button>stop</button>
+    <div id="c">click me</div>
+    <div id="d">my details</div>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#c").click(function () {
+               // $("#d").slideDown(3000)
+              //  $("#d").slideUp(3000)
+                $("#d").slideToggle(3000)
+            });
+
+            $("button").click(function(){
+                $("#d").stop()
+            })
+
+        });
+
+    </script> -->
+
+    <button id="c">click</button>
+
+    <div style="background-color: chartreuse;width: 100px; height: 100px;position: absolute;">
+
+    </div>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#c").click(function () {
+                $("div").animate({
+                    left: '250px',
+                    opacity:'.3',
+                    height:'+=250px'
+                },"slow")
+
+
+            })
+
+        });
+
+    </script> 
+
+
+
+
+</body>
+
+</html>
